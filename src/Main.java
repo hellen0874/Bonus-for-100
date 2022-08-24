@@ -4,7 +4,7 @@ public class Main {
         int replenishment = 1100; // сумма пополнения
         int a = replenishment / 100;// расчет размера бонуса
         int bonus;
-        if (replenishment >= 1000) {
+        if (replenishment > 1000) {
             bonus = a;
         } else {
             bonus = 0;
