@@ -13,6 +13,6 @@ public class Main {
 
         System.out.println("При пополнении счета с начальной суммой " + amount +
                 " р. на " + replenishment + " р., итоговая сумма на счете составит " +
-                totalAmount + " р.");
+                totalAmount + " р."+ ", начислено бонусов: " + bonus);
     }
 }
