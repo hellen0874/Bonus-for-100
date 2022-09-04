@@ -2,17 +2,17 @@ public class Main {
     public static void main(String[] args) {
         int amount = 100; // Начальное количество на счете
         int replenishment = 1100; // сумма пополнения
-        int a = replenishment / 100;// расчет размера бонуса
-        int bonus;
+        int preBonus = replenishment / 100;// расчет размера бонуса
+        int totalBonus;
         if (replenishment > 1000) {
-            bonus = a;
+            totalBonus = preBonus;
         } else {
-            bonus = 0;
+            totalBonus = 0;
         }
-        int totalAmount = amount + replenishment + bonus; // итоговая сумма на счете
+        int totalAmount = amount + replenishment + totalBonus; // итоговая сумма на счете
 
         System.out.println("При пополнении счета с начальной суммой " + amount +
                 " р. на " + replenishment + " р., итоговая сумма на счете составит " +
-                totalAmount + " р."+ ", начислено бонусов: " + bonus);
+                totalAmount + " р."+ ", начислено бонусов: " + totalBonus);
     }
 }
